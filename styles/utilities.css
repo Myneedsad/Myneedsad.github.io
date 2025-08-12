@@ -1,0 +1,61 @@
+.center-self {
+  justify-self: center !important;
+  align-self: center !important;
+  
+}
+.center-self h2 {
+  padding: auto;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.center-project p {
+  max-width: 700px; /* จำกัดความกว้างให้อ่านสบาย */
+  margin: left auto; /* จัดกลาง */
+  padding: 0.5rem 1rem; /* เพิ่มพื้นที่รอบข้อความ */
+  font-size: clamp(1rem, 1.2vw, 1.1rem); /* ปรับขนาดตามจอ */
+  line-height: 1.8; /* เพิ่มระยะห่างบรรทัดให้อ่านง่าย */
+  color: #070707; /* สีตัวหนังสือเทาเข้ม */
+  text-align: left; /* จัดข้อความกึ่งกลาง */
+
+
+
+}
+
+.content center-self ul{
+  display: flex;
+  margin: 3rem auto;
+}
+
+@media (max-width: 1440px) {
+    .content center-project {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content center-project {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .content center-project {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .content center-project {
+        height: 50vh;
+    }
+}
+
+
+
+

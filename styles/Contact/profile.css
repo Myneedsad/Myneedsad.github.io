@@ -1,0 +1,98 @@
+.img-profile {
+  position: relative; /* เพื่อให้ ::after ทำงานถูกต้อง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(255 255 255 / 0.12); /* พื้นหลังโปร่งแสง */
+  border-radius: 25px;
+  border: 2px solid rgba(83, 83, 83, 0.4); /* ขอบฟ้าโปร่งแสง */
+  backdrop-filter: blur(12px); /* เบลอพื้นหลัง */
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  box-shadow: 0 10px 30px rgba(211, 211, 211, 0.15); /* เงาสีฟ้าอ่อน */
+  max-width: 100%;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-profile img {
+  width: 48dvh;
+  height: 52dvh;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: var(--primary-light);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(0 120 255 / 0.6); /* เส้นขอบฟ้าโปร่งแสงรอบรูป */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.4s ease,
+              border-color 0.4s ease;
+  cursor: pointer;
+  will-change: transform, box-shadow;
+  position: relative;
+  z-index: 1;
+}
+
+.img-profile p {
+  padding: 3rem;
+  font-size: 10dvh;  
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70%;
+  color: #222; 
+  font-weight: 300;
+}
+
+/* Tablet */
+/* Desktop - large screens */
+@media (min-width: 1025px) {
+  .img-profile p h2 {
+    font-size: 3vw;      /* ปรับขนาดฟอนต์ตามความกว้างหน้าจอ */
+    padding: 2rem 2rem;
+  }
+}
+
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+  .img-profile p h2 {
+    font-size: 5vw;
+    padding: 1.8rem 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .img-profile p h2 {
+    font-size: 6vw;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .img-profile p h2 {
+    font-size: 7vw;
+    padding: 1rem 0.8rem;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .img-profile img {
+    width: 28dvh;
+    height: 32dvh;
+    border-radius: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .img-profile img {
+    width: 22dvh;
+    height: 25dvh;
+    border-radius: 12px;
+  }
+}

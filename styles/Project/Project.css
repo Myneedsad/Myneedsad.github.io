@@ -1,0 +1,28 @@
+
+.center-project h2 {
+  font-size: clamp(3.2rem, 2vw, 2rem); 
+  line-height: 1.5;
+  margin: 0 auto 1rem; 
+  padding: 0.5rem 1rem; 
+  text-align: center; 
+  font-weight: 600; 
+}
+
+.center-project h3 {
+  font-size: clamp(1.5rem, 2vw, 1.5rem) ;
+  line-height: 1.5;
+  margin: 0 auto 1rem; 
+  padding: 0.5rem 1rem; 
+  text-align: center; 
+  font-weight: 600; 
+}
+
+.center-project h4 {
+  font-size: clamp ;
+  line-height: 1.5;
+  margin: 0 auto 1rem; 
+  padding: 0.5rem 1rem; 
+  text-align: center; 
+  font-weight: 600; 
+}
+
